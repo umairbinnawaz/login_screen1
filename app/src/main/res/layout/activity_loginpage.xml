@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/background1"
+    android:layout_height="match_parent"
+    tools:context=".loginpage">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:src="@drawable/food"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:id="@+id/edmail1"
+        android:background="@drawable/editfo"
+        android:layout_margin="10dp"
+        android:paddingLeft="10dp"
+        android:inputType="textEmailAddress"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:id="@+id/edpasd2"
+            android:layout_margin="10dp"
+            android:paddingLeft="10dp"
+            android:background="@drawable/editfo"
+            android:inputType="textWebPassword"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:id="@+id/show_pass_btn1"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/pasd123"
+            android:layout_weight=".3"
+            android:alpha=".5"
+            android:padding="5dp"/>
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_marginTop="60dp"
+        android:layout_height="wrap_content"
+        android:text="SING IN"
+        android:id="@+id/btnlog1"
+        android:textSize="20dp"
+        android:textColor="#F44336"
+        />
+
+</LinearLayout>

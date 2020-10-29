@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background1"
+    android:layout_height="match_parent"
+    tools:context=".singup">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:src="@drawable/food"
+            />
+    </LinearLayout>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+       <EditText
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:hint="Name"
+           android:id="@+id/edname"
+           android:layout_margin="10dp"
+           android:paddingLeft="10dp"
+           android:inputType="text"
+           android:background="@drawable/editfo"
+           />
+   </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:background="@drawable/editfo"
+            android:id="@+id/edmail"
+            android:layout_margin="10dp"
+            android:paddingLeft="10dp"
+            android:inputType="textEmailAddress"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:id="@+id/edpasd"
+            android:layout_margin="10dp"
+
+            android:paddingLeft="10dp"
+            android:background="@drawable/editfo"
+            android:inputType="textWebPassword"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:id="@+id/show_pass_btn"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/pasd123"
+            android:layout_weight=".3"
+            android:alpha=".5"
+            android:padding="5dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Confirm Password"
+            android:id="@+id/edpasdc"
+            android:paddingLeft="10dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/editfo"
+            android:inputType="textWebPassword"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/pasd123"
+            android:id="@+id/show_pass_btn2"
+            android:layout_weight=".3"
+            android:alpha=".5"
+            />
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_marginTop="60dp"
+        android:layout_height="wrap_content"
+        android:text="SING IN"
+        android:id="@+id/btnsing1"
+        android:textSize="20dp"
+
+        android:textColor="#F44336"
+        android:background="@drawable/editfo"
+        />
+
+
+</LinearLayout>
